@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "VirtuaPlant -- Bottle-filling Factory"
 cd /app/virtuaplant/plants/bottle-filling
 echo "- Starting World View"
-./world.py &
+python ./world.py &
 echo "- Starting HMI"
-./hmi.py &
+python ./hmi.py &
