@@ -31,7 +31,7 @@ log.setLevel(logging.INFO)
 # PLC
 #########################################
 PLC_SERVER_IP   = "localhost"
-PLC_SERVER_PORT = 502
+PLC_SERVER_PORT = 5020
 
 PLC_RW_ADDR = 0x0
 PLC_TAG_RUN = 0x0

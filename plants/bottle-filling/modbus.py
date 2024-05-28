@@ -16,7 +16,7 @@ from pymodbus.transaction   import ModbusSocketFramer
 # Modbus code
 #########################################
 # Global Variables
-MODBUS_PORT = 502
+MODBUS_PORT = 5020
 
 class ClientModbus(ModbusTcpClient):
     def __init__(self, address, port = MODBUS_PORT):

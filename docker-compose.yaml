@@ -5,7 +5,7 @@ services:
     #image: paradoxxs/virtuaplant:machine
     image: virtualplant_machine
     ports:
-      - 502:502
+      - 5020:5020
       - 3001:3000
     networks:
       - OT
