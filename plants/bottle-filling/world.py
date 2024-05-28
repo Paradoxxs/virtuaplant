@@ -118,7 +118,7 @@ def add_ball(space):
 
     return shape
 
-def draw_ball(screen, ball, color=THECOLORS['blue']):
+def draw_ball(screen, ball, color=THECOLORS['yellow']):
     p = int(ball.body.position.x), 600-int(ball.body.position.y)
     pygame.draw.circle(screen, color, p, int(ball.radius), 2)
     
@@ -419,7 +419,7 @@ def runWorld():
         # Draw the level sensor
         draw_ball(screen, level_sensor, THECOLORS['red'])
 
-        title           = fontMedium.render(str("Bottle-filling factory"), 1, THECOLORS['deepskyblue'])
+        title           = fontMedium.render(str("Juice-filling factory"), 1, THECOLORS['deepskyblue'])
         name            = fontBig.render(str("VirtuaPlant"), 1, THECOLORS['gray20'])
         instructions    = fontSmall.render(str("(press ESC to quit)"), 1, THECOLORS['gray'])
 
