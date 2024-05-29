@@ -1,27 +1,25 @@
 
 services:
 
-  bottle-filling_machine:
-    #image: paradoxxs/virtuaplant:machine
-    image: virtuaplant:hmi
+  bottle-filling_plc:
+    #image: paradoxxs/virtuaplant:plc
+    image: virtuaplant:plc
     ports:
       - 5020:5020
       - 3001:3000
-    networks:
-      - OT
-  bottle-filling_eng:
-    #image: paradoxxs/virtuaplant:engineer
-    image: virtuaplant:plc
+  bottle-filling_hmi:
+    #image: paradoxxs/virtuaplant:hmi
+    image: virtuaplant:hmi
     environment:
-      - PLC_SERVER_IP=bottle-filling_machine
-      - PLC_SERVER_PORT=502
+      - PLC_SERVER_IP=bottle-filling_plc
+      - PLC_SERVER_PORT=5020
     ports:
       - 3002:3000
-    networks:
-      - OT
     depends_on:
-      - bottle-filling_machine
-networks:
+      - bottle-filling_plc
 
-  OT:
-    driver: bridge
+      
+networks:
+ default:
+   name: OT
+   external: false
