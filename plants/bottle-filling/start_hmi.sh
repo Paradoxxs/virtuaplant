@@ -3,4 +3,4 @@
 echo "VirtuaPlant -- Juice filling factory"
 cd /app/virtuaplant/plants/bottle-filling
 echo "- Starting HMI"
-python ./hmi.py &
+python ./hmi_eng.py &

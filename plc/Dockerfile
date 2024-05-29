@@ -57,4 +57,4 @@ COPY /root /
 EXPOSE 5020
 EXPOSE 3000
 
-RUN chmod 777 /app/virtuaplant/plants/bottle-filling/start_machine.sh
+RUN chmod 777 /app/virtuaplant/plants/bottle-filling/start_plc.sh

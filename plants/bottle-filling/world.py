@@ -30,7 +30,7 @@ log.setLevel(logging.INFO)
 #########################################
 # PLC
 #########################################
-PLC_SERVER_IP   = "localhost"
+PLC_SERVER_IP   = "0.0.0.0"
 PLC_SERVER_PORT = 5020
 
 PLC_RW_ADDR = 0x0
@@ -45,7 +45,7 @@ PLC_TAG_NOZZLE  = 0x4
 #########################################
 # MOTOR actuator
 #########################################
-MOTOR_SERVER_IP     = "localhost"
+MOTOR_SERVER_IP     = "0.0.0.0"
 MOTOR_SERVER_PORT   = 503
 
 MOTOR_RW_ADDR = 0x0
@@ -54,7 +54,7 @@ MOTOR_TAG_RUN = 0x0
 #########################################
 # NOZZLE actuator
 #########################################
-NOZZLE_SERVER_IP    = "localhost"
+NOZZLE_SERVER_IP    = "0.0.0.0"
 NOZZLE_SERVER_PORT  = 504
 
 NOZZLE_RW_ADDR = 0x0
@@ -63,7 +63,7 @@ NOZZLE_TAG_RUN = 0x0
 #########################################
 # LEVEL sensor
 #########################################
-LEVEL_SERVER_IP     = "localhost"
+LEVEL_SERVER_IP     = "0.0.0.0"
 LEVEL_SERVER_PORT   = 505
 
 LEVEL_RO_ADDR = 0x0
@@ -72,7 +72,7 @@ LEVEL_TAG_SENSOR = 0x0
 #########################################
 # CONTACT sensor
 #########################################
-CONTACT_SERVER_IP   = "localhost"
+CONTACT_SERVER_IP   = "0.0.0.0"
 CONTACT_SERVER_PORT = 506
 
 CONTACT_RO_ADDR = 0x0
