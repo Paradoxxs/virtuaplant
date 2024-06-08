@@ -19,6 +19,9 @@ import os
 # Get environment variables
 SERVER_IP = os.environ['PLC_SERVER_IP']
 SERVER_PORT = int(os.environ['PLC_SERVER_PORT'])
+client = Client(SERVER_IP, port=SERVER_PORT)
+client.write(PLC_RW_ADDR + PLC_TAG_RUN,1)
+
 
 #########################################
 # HMI code
@@ -185,8 +188,7 @@ def main():
     win.show_all()
     Gtk.main()
 
-    client = Client(SERVER_IP, port=SERVER_PORT)
-    client.write(PLC_RW_ADDR + PLC_TAG_RUN,1)
+
 
 if __name__ == "__main__":
     sys.exit(main())
