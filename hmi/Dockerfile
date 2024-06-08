@@ -1,7 +1,7 @@
 FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntujammy
 LABEL maintainer="Paradoxxs"
 
-ENV TITLE="OT engineer"
+ENV TITLE="OT HMI"
 
 WORKDIR /app
 RUN chown -R abc /app

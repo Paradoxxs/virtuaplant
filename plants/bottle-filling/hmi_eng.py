@@ -126,6 +126,7 @@ class HMIWindow(Gtk.Window):
         self.resetLabels()
         GObject.timeout_add_seconds(HMI_SLEEP, self.update_status)
 
+
     def setProcess(self, widget, data=None):
         try:
             self.client.write(PLC_RW_ADDR + PLC_TAG_RUN, data)
@@ -183,6 +184,9 @@ def main():
 
     win.show_all()
     Gtk.main()
+
+    client = Client(SERVER_IP, port=SERVER_PORT)
+    client.write(PLC_RW_ADDR + PLC_TAG_RUN,1)
 
 if __name__ == "__main__":
     sys.exit(main())

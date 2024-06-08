@@ -2,8 +2,8 @@
 services:
 
   bottle-filling_plc:
-    #image: paradoxxs/virtuaplant:plc
-    image: virtuaplant:plc
+    image: paradoxxs/virtuaplant:plc
+    #image: virtuaplant:plc
     ports:
       - 5020:5020
       - 3001:3000
