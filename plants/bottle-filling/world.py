@@ -419,7 +419,7 @@ def runWorld():
         # Draw the level sensor
         draw_ball(screen, level_sensor, THECOLORS['red'])
 
-        title           = fontMedium.render(str("Juice filling Factory"), 1, THECOLORS['deepskyblue'])
+        title           = fontMedium.render(str("Juice-filling Factory"), 1, THECOLORS['deepskyblue'])
         name            = fontBig.render(str("VirtuaPlant"), 1, THECOLORS['gray20'])
         instructions    = fontSmall.render(str("(press ESC to quit)"), 1, THECOLORS['gray'])
 

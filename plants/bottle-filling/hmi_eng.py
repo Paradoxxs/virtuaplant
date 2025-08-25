@@ -68,35 +68,35 @@ class HMIWindow(Gtk.Window):
         elementIndex += 1
 
         # Nozzle status label
-        nozzleStatusLabel = Gtk.Label("Nozzle Status")
+        nozzleStatusLabel = Gtk.Label("Nozzle status")
         nozzleStatusValue = Gtk.Label()
         grid.attach(nozzleStatusLabel, 0, elementIndex, 1, 1)
         grid.attach(nozzleStatusValue, 1, elementIndex, 1, 1)
         elementIndex += 1
 
         # Motor status label
-        motorStatusLabel = Gtk.Label("Motor Status")
+        motorStatusLabel = Gtk.Label("Motor status")
         motorStatusValue = Gtk.Label()
         grid.attach(motorStatusLabel, 0, elementIndex, 1, 1)
         grid.attach(motorStatusValue, 1, elementIndex, 1, 1)
         elementIndex += 1
 
         # Level hit label
-        levelHitLabel = Gtk.Label("Level Hit")
+        levelHitLabel = Gtk.Label("Level hit")
         levelHitValue = Gtk.Label()
         grid.attach(levelHitLabel, 0, elementIndex, 1, 1)
         grid.attach(levelHitValue, 1, elementIndex, 1, 1)
         elementIndex += 1
 
         # Process status
-        processStatusLabel = Gtk.Label("Process Status")
+        processStatusLabel = Gtk.Label("Process status")
         processStatusValue = Gtk.Label()
         grid.attach(processStatusLabel, 0, elementIndex, 1, 1)
         grid.attach(processStatusValue, 1, elementIndex, 1, 1)
         elementIndex += 1
 
         # Connection status
-        connectionStatusLabel = Gtk.Label("Connection Status")
+        connectionStatusLabel = Gtk.Label("Connection status")
         connectionStatusValue = Gtk.Label()
         grid.attach(connectionStatusLabel, 0, elementIndex, 1, 1)
         grid.attach(connectionStatusValue, 1, elementIndex, 1, 1)

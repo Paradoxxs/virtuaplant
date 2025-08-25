@@ -76,3 +76,18 @@ Enter the `/plants` directory, select the plant you want (currently only one ava
 ### The following protocols are being considered:
 * DNP3 (based on OpenDNP3)
 * S7
+
+
+# Docker build
+
+```
+docker build -t plc ./plc --no-cache
+```
+
+````
+docker build -t hmi ./hmi --no-cache
+````
+
+````
+docker-compose up -d
+```

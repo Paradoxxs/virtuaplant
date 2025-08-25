@@ -2,14 +2,14 @@
 services:
 
   bottle-filling_plc:
-    image: paradoxxs/virtuaplant:plc
+    image: plc
     #image: virtuaplant:plc
     ports:
       - 5020:5020
       - 3001:3000
   bottle-filling_hmi:
     #image: paradoxxs/virtuaplant:hmi
-    image: virtuaplant:hmi
+    image: hmi
     environment:
       - PLC_SERVER_IP=bottle-filling_plc
       - PLC_SERVER_PORT=5020
